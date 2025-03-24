@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Binance Trading Bot</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Binance Trading Bot</h1>
+  <div>
+    <label>API Key: <input type="text" id="apiKey"></label><br>
+    <label>Secret Key: <input type="text" id="apiSecret"></label><br>
+    <label>Pair: <input type="text" id="symbol" value="BTCUSDT"></label><br>
+    <label>Side: 
+      <select id="side">
+        <option value="BUY">BUY</option>
+        <option value="SELL">SELL</option>
+      </select>
+    </label><br>
+    <label>Quantity: <input type="text" id="quantity" value="0.001"></label><br>
+    <button id="submitOrder">Submit Order</button>
+  </div>
+  <pre id="result"></pre>
+  <script src="bot.js"></script>
+</body>
+</html>
